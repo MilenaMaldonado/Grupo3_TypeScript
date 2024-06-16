@@ -1,0 +1,18 @@
+// Interfaces
+
+// Define interface for a user
+interface Usuario {
+    id: number;
+    name: string;
+    email: string;
+    age: number;
+}
+
+// Function that accepts a Usuario object and returns formatted string
+function formatUser(user: Usuario): string {
+    return `ID: ${user.id}, Name: ${user.name}, Email: ${user.email}, Age: ${user.age}`;
+}
+
+// Example usage
+const user: Usuario = { id: 1, name: "Alice", email: "alice@example.com", age: 28 };
+console.log(formatUser(user));
